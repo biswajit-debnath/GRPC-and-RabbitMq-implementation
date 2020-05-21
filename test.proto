@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+
+package testPackage;
+
+service Test {
+	rpc getData(no_data) returns (data);
+}
+
+message no_data {}
+
+message data {
+	string data_txt = 1;
+}
